@@ -9,11 +9,7 @@ public class Salary {
     private int monthWorkingInYear;
     private LocalDate dateJoined;
     private String spouseIdNumber;
-    
-
-	
-	private boolean isForeigner;
-    
+	private boolean isForeigner; 
     private List<String> childIdNumbers;
     public String getSpouseIdNumber() {
         return spouseIdNumber;
@@ -24,24 +20,6 @@ public class Salary {
      * Jika pegawai adalah warga negara asing gaji bulanan diperbesar sebanyak 50%
      */
 
-    public void setMonthlySalary(int grade, boolean isForeigner) {
-        if (grade == 1) {
-            monthlySalary = 3000000;
-            if (isForeigner) {
-                monthlySalary = (int) (3000000 * 1.5);
-            }
-        } else if (grade == 2) {
-            monthlySalary = 5000000;
-            if (isForeigner) {
-                monthlySalary = (int) (5000000 * 1.5);
-            }
-        } else if (grade == 3) {
-            monthlySalary = 7000000;
-            if (isForeigner) {
-                monthlySalary = (int) (7000000 * 1.5);
-            }
-        }
-    }
     public void setMonthlySalary(int grade) {	
 		if (grade == 1) {
 			monthlySalary = 3000000;
