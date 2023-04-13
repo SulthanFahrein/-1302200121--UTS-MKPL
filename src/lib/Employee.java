@@ -81,7 +81,6 @@ public class Employee {
 		this.spouseIdNumber = idNumber;
 	}
 	
-	public void addChild(String childName, String childIdNumber) {
 		childIdNumbers.add(childIdNumber);
 	}
 	
